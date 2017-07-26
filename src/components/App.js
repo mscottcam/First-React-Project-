@@ -13,9 +13,7 @@ export default class App extends React.Component {
 
     onSubmit(event) {
         event.preventDefault();
-        console.log(event)
-        // this.setState( { item: event.target.value } );
-        this.setState( { items: [...this.state.items, event] } );
+        this.setState( { items: [...this.state.items, event.target.value] } );
     }
 
     render() {
