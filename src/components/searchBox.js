@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default function searchBox(props) {
+export default function SearchBox(props) {
     return (
-        <form onSubmit={e => e.preventDefault()}>
+        <form name="calc" onSubmit={e => props.onSubmit(e)}>
             <label htmlFor="input">Item</label>
-            <input id="input" />
-            <button>Add</button>
+             <input onChange={e => props.onChange(e)} id="input" name="input" /> 
+            <button type="submit">Add</button>
         </form>
     )
 }
