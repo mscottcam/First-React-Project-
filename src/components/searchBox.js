@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function searchBox(props) {
+export default function SearchBox(props) {
     return (
-        <form onSubmit={e => e.preventDefault()}>
+        <form onSubmit={e => props.onSubmit(e.target.value)}>
             <label htmlFor="input">Item</label>
-            <input id="input" />
-            <button>Add</button>
+            <input id="input"  />
+            <button >Add</button>
         </form>
     )
 }
