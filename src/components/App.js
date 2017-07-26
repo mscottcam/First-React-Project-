@@ -9,6 +9,7 @@ export default class App extends React.Component {
             items: []
         }
     }
+    
     render() {
         return(
             <SearchBox />
